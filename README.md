@@ -10,6 +10,15 @@ This project demonstrates basic Flask routing concepts.
 - Added default route (`/`) returning **Welcome to Flatiron Cars**
 - Prepared `existing_models` list for later model-specific routes
 
+## Updates
+
+- Added `/models/<model>` route
+  - Checks if the requested model exists in `existing_models`
+  - Returns “Flatiron {model} is in our fleet” if found
+  - Returns “No models called {model} exist in our catalog” if not found
+- Configured Flask to run on port 5555
+- Verified both routes work locally
+
 ## Next Steps
 
 - Implement `/model` route to display car model details
