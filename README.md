@@ -1,6 +1,19 @@
 # Lab: Car Routes Lab
 
----
+# Python Flask Car Routes Lab
+
+This project demonstrates basic Flask routing concepts.
+
+## Current Progress
+
+- Initialized Flask app (`app.py`)
+- Added default route (`/`) returning **Welcome to Flatiron Cars**
+- Prepared `existing_models` list for later model-specific routes
+
+## Next Steps
+
+- Implement `/model` route to display car model details
+- Test routes locally before merge
 
 ## Overview
 
@@ -68,6 +81,7 @@ Build routes for a car company:
 Before we begin coding, complete the initial setup:
 
 1. **Fork and Clone**
+
    - Go to the GitHub repository link.
    - Fork the repository to your GitHub account.
    - Clone the forked repository to your local machine.
@@ -92,14 +106,15 @@ Build the following routes:
 
 ### App Routes:
 
-- `/`  
+- `/`
+
   - Returns: `"Welcome to Flatiron Cars"`
 
-- `/<model>`  
-  - Takes `model` variable from the URL  
-  - Uses the `model` variable to check against an `existing_models` array  
+- `/<model>`
+  - Takes `model` variable from the URL
+  - Uses the `model` variable to check against an `existing_models` array
     - If model exists:  
-      `"Flatiron {model} is in our fleet!"`  
+      `"Flatiron {model} is in our fleet!"`
     - If model doesn't exist:  
       `"No models called {model} exists in our catalog"`
 
